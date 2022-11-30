@@ -159,10 +159,11 @@ main span{
     text-align: start;
 }
 
-.biography{
+.over{
     height: 90vh;
     border: 1px solid #F0F3F4;
     width: auto;
+
     margin: auto;
     padding: 1rem;
 }
@@ -194,7 +195,9 @@ main span{
 
     border: 1px solid #F0F3F4;
     width: auto;
-    margin: auto;
+    height: auto;
+
+    margin: 1rem;
     padding: 1rem;
     
 }
@@ -206,13 +209,10 @@ main span{
 /*========== WERKERVARING =============*/
 
 .WERKERVARING{
-    /*height: 90vh;
-    padding: 2rem;
-    font-size: 2rem;*/
-
     border: 1px solid #F0F3F4;
     width: auto;
-    margin: auto;
+
+    margin: 1rem;
     padding: 1rem;
 }
 
@@ -225,6 +225,7 @@ main span{
 
     border: 1px solid #F0F3F4;
     width: auto;
+
     margin: auto;
     padding: 1rem;
 }
