@@ -24,9 +24,12 @@
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 
 
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/style.css">
 
-        <link rel="icon" type="image/png" href="../image/sourceReact.gif"   >
+        <link rel="icon" type="image/png" href="./image/sourceReact.gif"   >
     </head>
     

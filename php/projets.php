@@ -4,11 +4,11 @@
 
 <header>
                     <ul class="cv">
-                       <li ><a href="../php/index.php">Curriculum&nbsp;Vitae</a></li>   
+                       <li ><a href="../index.php">Curriculum&nbsp;Vitae</a></li>   
                     </ul>
 
                     <ul> 
-                        <li><a href="../php/index.php"><img class="flecheArriere" src="../image/fleche-arriere.png"></a></li>
+                        <li><a href="../index.php"><img class="flecheArriere" src="../image/fleche-arriere.png"></a></li>
                         
                     </ul>            
 

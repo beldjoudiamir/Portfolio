@@ -1,6 +1,6 @@
-<?php include('../template/head.php')?>
-<?php include('../template/nav_logo.php')?>
-<?php include('../template/header.php') ?>
+<?php include('./template/head.php')?>
+<?php include('./template/nav_logo.php')?>
+<?php include('./template/header.php') ?>
 
 
 <body id="html">
@@ -163,27 +163,27 @@
 
                  <h2>OUTILS</h2>
 
-                 <img class="img_dev"src="../image/file_type_vscode_icon_130084.png"alt="">
-                 <img class="img_dev"src="../image/gitcouleur.png"alt="">
+                 <img class="img_dev"src="./image/file_type_vscode_icon_130084.png"alt="">
+                 <img class="img_dev"src="./image/gitcouleur.png"alt="">
                  
 
                  <h2>FRAMEWORK</h2>
                  
-                 <img class="img_dev"src="../image/symfony_icon-icons.com_50769.png"alt="">
-                 <img class="img_dev_2"src="../image/pngaaa.com-3801770.png"alt="">
-                 <img class="img_dev_2"src="../image/pngaaa.com-6447779.png"alt="">
-                 <img class="img_dev"src="../image/985px-Laravel.svg.png"alt="">
+                 <img class="img_dev"src="./image/symfony_icon-icons.com_50769.png"alt="">
+                 <img class="img_dev_2"src="./image/pngaaa.com-3801770.png"alt="">
+                 <img class="img_dev_2"src="./image/pngaaa.com-6447779.png"alt="">
+                 <img class="img_dev"src="./image/985px-Laravel.svg.png"alt="">
                  
 
 
                  <h2>DEVELOPPEMENT</h2>
 
-                 <img class="img_dev"src="../image/html5.png"alt="">
-                 <img class="img_dev"src="../image/css3.png"alt="">
-                 <img class="img_dev"src="../image/5968292.png"alt="">
-                 <img class="img_dev"src="../image/php.png"alt="">
-                 <img class="img_dev"src="../image/my sql.png"alt="">
-                 <img class="img_dev"src="../image/react.png"alt="">
+                 <img class="img_dev"src="./image/html5.png"alt="">
+                 <img class="img_dev"src="./image/css3.png"alt="">
+                 <img class="img_dev"src="./image/5968292.png"alt="">
+                 <img class="img_dev"src="./image/php.png"alt="">
+                 <img class="img_dev"src="./image/my sql.png"alt="">
+                 <img class="img_dev"src="./image/react.png"alt="">
                  
                  </section>
 
@@ -230,7 +230,7 @@
 
                 </div>
                 <div class="my_photo">
-                        <img id="ma_photo" src="../image/amir_b.jpg" alt="photo_profil">
+                        <img id="ma_photo" src="./image/amir_b.jpg" alt="photo_profil">
                 </div>
 
                 
