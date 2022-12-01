@@ -317,7 +317,7 @@ footer{
 
 /*========== media =============*/
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
 
     body{
         display: flex;
