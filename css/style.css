@@ -27,13 +27,7 @@ body{
     background-color: #4B6983;/*#4B6983*/
 }
 
-/*
-.carre{
-    color: red;
-    background-color: yellow;
-    width: 30px;
-    height: 20px;
-} */
+
 /*========== photo du CV =============*/
 
 .my_photo{
@@ -211,6 +205,7 @@ main span{
 .WERKERVARING{
     border: 1px solid #F0F3F4;
     width: auto;
+    height: auto;
 
     margin: 1rem;
     padding: 1rem;
@@ -225,6 +220,7 @@ main span{
 
     border: 1px solid #F0F3F4;
     width: auto;
+    height: auto;
 
     margin: auto;
     padding: 1rem;
@@ -318,36 +314,126 @@ footer{
     padding: 3rem;
 }
 
-/*
-code html 
- <!--   <div class="cercle">
-    <button id="mycercle" class="cercle2" type="button" aria-label="Changer la couleur du thème"></button>
-    <button id="mycercle" class="cercle3" type="button" aria-label="Changer la couleur du thème"></button>
-     <button id="mycercle" class="cercle4" type="button" aria-label="Changer la couleur du thème"></button>
-         </div>   -->
+/*========== media =============*/
 
+@media screen and (max-width: 1364px) {
 
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-.cercle .cercle2 .cercle3 .cercle4{
+    header{
+        position:fixed;
+        bottom:auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 1rem;
+        background-color:#4B6983;
+
+        
+    }
     
+    header ul.cv{
+        position: relative;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: 0.6s;
+
+    }
+    
+    header ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header ul li{
+        position: relative;
+        list-style: none;
+        
+    }
+    
+    header ul li a{
+        position: relative;
+        margin: 1rem;
+        text-decoration: none;
+        letter-spacing:  auto;
+        transition: 0.6s;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #F0F3F4;
+
+        padding: 0rem 0.5rem 0rem 0rem;
+
+    }
+    
+    header.sticky{
+        padding: 5px 100px;
+        background: #F0F3F4;
+        
+    }
+        
+
+  /*= changement taille page gauche=*/  
+
+    body .right_page{
+        /*padding: 1rem;*/
+        width: 100%;
+        height: 50%;
+        background-color: #4B6983;
+    }
+
+    .my_photo{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        align-content: flex-start;
-        margin: 1rem;
-        width: 40px;
-        height: 4px;
-        border-radius: 20px;
+        justify-content: space-evenly;
+    }
+    #ma_photo{
+        
+        width: 30%;
+        height: 30%;
+        margin: 3rem;
+    }
+    /*= menu Download CV =*/
+
+            .nav_down{
+
+
+                display: none;
+                justify-content: end;
+                font-size: 2rem;
+                /*margin: 1rem;*/
+                margin-top: 1rem;
+                
+            }
+            .nav_down ul{
+                width: 100%;
+                padding: 1rem;
+                background-color: #17202A;
+            }
+            .nav_down ul a{
+                text-decoration: none;
+                font-weight: bold;
+                color: #F0F3F4;
+            }
+
+    body .left_page{
+
+        width: 100%;
+        height: 50%;
+        background-color: #F0F3F4;
+
+        overflow-y: scroll;
+
+
+    
+
     
 }
-.cercle2 {
-    background: #2980B9;
-}
-.cercle3 {
-    background: #C0392B;
-}
-.cercle4 {
-    background: #138D75;
-}*/
 
+}
