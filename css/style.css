@@ -4,6 +4,7 @@ body{
 
     font-family: 'Cormorant Garamond', serif;
     color: #131519;
+    background-color: #4B6983;
 
 }
 
@@ -316,7 +317,7 @@ footer{
 
 /*========== media =============*/
 
-@media screen and (max-width: 1364px) {
+@media screen and (max-width: 1300px) {
 
     body{
         display: flex;
@@ -383,7 +384,7 @@ footer{
 
     body .right_page{
         /*padding: 1rem;*/
-        width: 100%;
+        width: 95%;
         height: 50%;
         background-color: #4B6983;
     }
@@ -428,12 +429,49 @@ footer{
         height: 50%;
         background-color: #F0F3F4;
 
-        overflow-y: scroll;
+        overflow-y: scroll;  
+}
+
+main h1{
+    text-align: start;
+    margin: 1.5rem;
+    padding: 1rem;
+    font-size: 4rem;
+
+}
+main h2{
+    margin: 0.3rem 0.5rem 1.5rem 2.5rem;
+    padding: 0.5rem;
+    text-align: start;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main h3{
+
+    text-align: start;
+    font-weight: bold;
+}
 
 
-    
-
+main p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem ;
     
 }
+
+
+
+main span{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+
+    margin: 0.5rem 1rem 1rem 6rem;
+    padding: 0.5rem;
+    text-align: start;
+}
+
+
+
 
 }
