@@ -471,7 +471,129 @@ main span{
     text-align: start;
 }
 
+}
 
+/*========== media =============*/
+
+@media screen and (max-width: 636px) {
+
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header{
+        display: none;
+      
+    }
+    
+    
+        
+
+  /*= changement taille page gauche=*/  
+
+    body .right_page{
+        /*padding: 1rem;*/
+        width: 94%;
+        height: 50%;
+        background-color: #4B6983;
+    }
+
+    .my_photo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #ma_photo{
+        
+        width: 30%;
+        height: 0 auto;
+        margin: 3rem;
+    }
+    /*= menu Download CV =*/
+
+            .nav_down{
+
+
+                display: none;
+                justify-content: end;
+                font-size: 2rem;
+                /*margin: 1rem;*/
+                margin-top: 1rem;
+                
+            }
+            .nav_down ul{
+                width: 100%;
+                padding: 1rem;
+                background-color: #17202A;
+            }
+            .nav_down ul a{
+                text-decoration: none;
+                font-weight: bold;
+                color: #F0F3F4;
+            }
+
+    body .left_page{
+
+        width: 100%;
+        height: 50%;
+        background-color: #F0F3F4;
+
+        overflow-y: scroll;  
+}
+
+main h1{
+    text-align: start;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 4rem;
+
+}
+main h2{
+    margin: 0.3rem 0.2rem 0.2rem 2.5rem;
+    padding: 0.5rem;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main h3{
+
+    text-align: start;
+    font-weight: bold;
+}
+
+
+main p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem ;
+    
+}
+
+
+
+main span{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+
+    margin: 0.5rem 1rem 1rem 6rem;
+    padding: 0.5rem;
+    text-align: start;
+}
+
+
+.nav_icone a img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 2rem;
+    
+}
+
+.nav_end_icone a img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 2rem;
+}
 
 
 }
