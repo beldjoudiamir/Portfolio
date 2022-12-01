@@ -397,7 +397,7 @@ footer{
     #ma_photo{
         
         width: 30%;
-        height: 30%;
+        height: 0 auto;
         margin: 3rem;
     }
     /*= menu Download CV =*/
