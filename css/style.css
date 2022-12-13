@@ -634,7 +634,7 @@ main span{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 1px;
-    max-width: 400px;
+    max-width: 300px;
     margin: 50px auto;
     border: 1px solid #f1f1f1;
     background: #f1f1f1;
@@ -644,7 +644,7 @@ main span{
     background: #090f29;
     color: #f1f1f1;
     cursor: pointer;
-    font-size: 65px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
