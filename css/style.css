@@ -400,7 +400,8 @@ body{
     }
     
     .button{
-    padding: 0 45%;  
+    padding: 0 45%; 
+    font-size: 1rem; 
     }
 
     .social{
