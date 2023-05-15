@@ -1,0 +1,84 @@
+body{
+  background-color: #ECF0F1;
+  min-width: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container{
+  max-width: 40rem;
+  /* https://developer.mozilla.org/fr/docs/Web/CSS/gradient/linear-gradient */
+  background: linear-gradient(#138D75, #A2D9CE);
+  /*background-color: #138D75;*/
+  border: 1px solid #273746;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 5px rgba(0,0,0, 0.3);
+}
+
+h1{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+h1 span{
+  font-weight: 700;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+label{
+  padding: 1rem;
+}
+
+input{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 7px;
+  border: none;
+  border-bottom: 0.2rem solid #333;
+  width: 17rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 5px rgba(0,0,0, 0.3);
+  
+}
+
+button {
+  margin: 2rem auto;
+  font-size: 1.8rem;
+  font-weight: 700;
+  min-width: 12rem;
+  padding: 1rem;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  background-color:  #fabe33;
+  box-shadow: 0 4px 4px rgba(0,0,0, 0.3);
+  border-radius: 0.5rem;
+}
+
+button:hover{
+  background-color:  #fabe20;
+}
+
+.response{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.res{
+  text-align: center;
+  font-size: 1.5rem;
+}
