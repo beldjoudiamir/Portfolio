@@ -6,6 +6,20 @@ body{
   padding: 2rem;
 }
 
+.page{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #273746;
+  border: 1px solid #273746;
+  padding: 1rem;
+}
+
+.page:hover{
+  background-color: #273746;
+  color: #ECF0F1;
+}
+
 .container{
   max-width: 30rem;
   /* https://developer.mozilla.org/fr/docs/Web/CSS/gradient/linear-gradient */
