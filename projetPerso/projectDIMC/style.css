@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-  max-width: 40rem;
+  max-width: 30rem;
   /* https://developer.mozilla.org/fr/docs/Web/CSS/gradient/linear-gradient */
   background: linear-gradient(#138D75, #A2D9CE);
   /*background-color: #138D75;*/
