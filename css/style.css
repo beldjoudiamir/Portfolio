@@ -361,7 +361,9 @@ body{
 
 .containerAbout .contentInfos{
     margin: 1rem 0 0 13.5rem;
-    width: 60%; 
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* page contact */
@@ -431,6 +433,8 @@ body{
     .containerAbout .contentInfos{
         margin: 1rem 0 0 10rem;
         width: 60%; 
+        display: flex;
+        flex-direction: column;
     }
 
     /* page content */

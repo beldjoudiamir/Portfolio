@@ -96,3 +96,18 @@ button:hover{
   text-align: center;
   font-size: 1.5rem;
 }
+
+/* tablette  */
+@media (max-width: 912px){ 
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page{
+    margin-bottom: 1rem;
+    width: 25rem;
+    text-align: center;
+  }
+
+}
