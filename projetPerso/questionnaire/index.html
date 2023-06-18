@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Culture Générale</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  
+  <body>
+
+    <a class="page" href="https://beldjoudiamir.github.io/Portfolio/">PAGE D'ACCUEIL</a>
+    <a class="page" href="https://github.com/beldjoudiamir/Portfolio/tree/master/projetPerso/">VOIR LE CODE SOURCE </a>
+
+   <div class="containe">
+    <h1>Culture <img src="./image/light.png"> Générale</h1>
+    <div class="quiz">
+    </div>
+    <div>
+    <form action="quiz">
+
+        <p class="differentQuestions">Qui chanta la célèbre chanson « Les Champs Elysées » ?</p>
+        <input type="radio" id="Joe Dassin" name="q1" value="joe-dassin" checked>
+        <label for="Joe Dassin">Joe Dassin</label><br>
+        <input type="radio" id="Lacrim" name="q1" value="Lacrim">
+        <label for="Lacrim">Lacrim</label><br>
+        <input type="radio" id="Charles aznavour" name="q1" value="Charles aznavour">
+        <label for="Charles aznavour">Charles aznavour</label>
+
+        <p class="differentQuestions">La plus petit village de France ?</p>
+        <input type="radio" id="Lemenil-Mitry" name="q2" value="Lemenil-Mitry" checked>
+        <label for="Lemenil-Mitry">Leménil-Mitry</label><br>
+        <input type="radio" id="erone" name="q2" value="erone">
+        <label for="erone">Érone</label><br>
+        <input type="radio" id="Rochefourchat" name="q2" value="Rochefourchat">
+        <label for="Rochefourchat">Rochefourchat</label>
+
+        <p class="differentQuestions">La personne qui a créé la 1er voiture au monde ?</p>
+        <input type="radio" id="Marcel-Renault" name="q3" value="Marcel-Renault" checked>
+        <label for="Marcel-Renault">Marcel Renault</label><br>
+        <input type="radio" id="Karl-Benz" name="q3" value="Karl-Benz">
+        <label for="Karl-Benz">Karl Benz</label><br>
+        <input type="radio" id="Gustav-Otto" name="q3" value="Gustav-Otto">
+        <label for="Gustav-Otto">Gustav Otto</label><br>
+      
+      <button type="submit" value="Submit">Valider ✔️</button>
+    </form>
+
+  </div>
+    <div class="result">
+        <h3 class="titelRes">J'attends vos réponses</h3>
+        <h4 class="scoreRes"> ??? </h4>
+        <p class="helpRes">....</p>
+      </div>
+    </div>
+    
+    <script src="./app.js" async defer></script>
+  </body>
+</html>

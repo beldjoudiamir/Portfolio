@@ -1,0 +1,85 @@
+body{
+  background-color: #D0ECE7;
+  min-width: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  scroll-behavior: auto;
+}
+
+.page{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #273746;
+  border: 1px solid #273746;
+  padding: 1rem;
+  /*width: 15rem;*/
+  height: 1rem;
+}
+
+.page:hover{
+  background-color: #273746;
+  color: #ECF0F1;
+}
+
+.containe{
+  width: 70%;
+  text-align: center;
+  /*border: 1px solid red;*/
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color:#17202A;
+  font-size: 3rem;
+}
+img{
+  width: 17rem;
+}
+
+h4{
+  font-size: 2rem;
+}
+
+.differentQuestions{
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+label{
+  font-size: 1rem;
+}
+
+button{
+  width: 15rem;
+  height: 3rem;
+  background-color: #EC7063;
+  color: #D0ECE7;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin: 1.5rem;
+}
+button:hover{
+  background-color: #F5B7B1;
+  color: #17202A;
+}
+
+.result{
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: #F2F3F4;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+
+
+
