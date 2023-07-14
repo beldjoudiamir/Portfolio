@@ -3,7 +3,7 @@ const emojis = ["✔️", "✨", "👀", "😭", "👎"];
 
 const form = document.querySelector("form");
 // console.log(form);
-form.addEventListener("submit", submitFrom)
+form.addEventListener("submit", submitFrom);
 
 function submitFrom(e){
   e.preventDefault();

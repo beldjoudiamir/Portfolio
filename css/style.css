@@ -214,7 +214,11 @@ body{
 }
 
 .containerAbout .contentInfos img{
-    width: 15rem;
+    width: 12rem;
+}
+
+.containerAbout #contentInfos img{
+    width: 16.2rem;
 }
 
 
@@ -346,7 +350,10 @@ body{
 }
 
 .button{
-    padding: 0 45%;
+    /*border: 1px solid red;*/
+    padding: 0 20%; 
+    font-size: 1.2rem; 
+
 }
 
 /* page about */
