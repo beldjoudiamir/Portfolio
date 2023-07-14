@@ -219,6 +219,8 @@ body{
 
 .containerAbout #contentInfos img{
     width: 16.2rem;
+    border-radius: 20px ;
+
 }
 
 
