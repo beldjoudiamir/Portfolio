@@ -170,6 +170,7 @@ input::placeholder{
     }
 }
 
+
 /* tablette  */
 @media (max-width: 1640px){ 
 
@@ -183,6 +184,7 @@ input::placeholder{
     .design{
         display: none;
     }
+
 
     /* tablette  */
 @media (max-width: 1443px){ 
@@ -204,5 +206,33 @@ input::placeholder{
     }
 }
 
-/* les autre media plustard   */
+/* les autre media query plustard .....   */
 
+@media (max-width: 1225px){ 
+
+    .pageButton{
+        font-size: 0.6rem;
+        padding: 0.5rem;
+      }
+    
+
+    .search{
+        display: none;
+    }
+    .search button{
+        display: none;    
+    }
+    .design-two{
+        display: none;   
+    }
+    h1{
+        display: none;
+    }
+
+    .page{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+}

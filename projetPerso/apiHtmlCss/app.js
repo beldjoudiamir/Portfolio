@@ -7,6 +7,8 @@ const resDisplay = document.querySelector(".responseApi");
 
 const loader = document.querySelector(".loader");
 
+
+
 searchInfo.addEventListener("submit", submitInfo);
 
 function submitInfo(e){
@@ -83,8 +85,28 @@ function resInCard(myParams) {
         resDisplay.appendChild(card);
     }); 
 
-    loader.style.display = "none";
+    
+      loader.style.display = "none";
 }
+
+/* media query  en JS*/
+// https://developer.mozilla.org/fr/docs/Web/API/Window/load_event
+window.onload = playLoader;
+// https://developer.mozilla.org/fr/docs/Web/API/Window/resize_event
+window.onresize = playLoader;
+
+function playLoader(){
+  if (window.matchMedia("(max-width: 1225px)").matches) {
+    errorMsg.textContent = " Malheureusement, je n'ai pas encore mis en place le rendu adaptatif pour tablette et mobile... ";
+    errorMsg.style.color ="#17202A";
+    loader.style.display = "flex";
+  } else {
+    loader.style.display = "none";
+    errorMsg.textContent = "";
+  };
+}
+
+
 
 
 
