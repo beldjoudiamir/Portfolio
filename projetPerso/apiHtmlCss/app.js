@@ -99,6 +99,7 @@ function playLoader(){
   if (window.matchMedia("(max-width: 1225px)").matches) {
     errorMsg.textContent = " Malheureusement, je n'ai pas encore mis en place le rendu adaptatif pour tablette et mobile... ";
     errorMsg.style.color ="#17202A";
+    resDisplay.textContent ="";
     loader.style.display = "flex";
   } else {
     loader.style.display = "none";
