@@ -131,3 +131,17 @@ button:hover{
     min-width: 150px;
     border-radius: 2px;
 }
+
+
+/* phone */
+@media (max-width: 573px){ 
+
+    h1{
+        
+        font-size: 3rem;
+        text-align: center;
+
+    }
+    
+  
+  }
