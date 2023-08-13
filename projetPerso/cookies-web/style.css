@@ -1,6 +1,21 @@
 body{
     background-color: #86aeab;
+    margin-top: 2rem;
 }
+
+.page{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #273746;
+    border: 1px solid #273746;
+    padding: 1rem;
+  }
+  
+.page:hover{
+    background-color: #273746;
+    color: #ECF0F1;
+  }
 
 .containerPage{
     display: flex;
@@ -142,6 +157,13 @@ button:hover{
         text-align: center;
 
     }
+
+    .page{
+        font-size: 0.7rem;
+        font-weight: 700;
+        
+      }
     
   
   }
+
