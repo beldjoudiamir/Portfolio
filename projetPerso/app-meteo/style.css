@@ -1,0 +1,73 @@
+body{
+    background:#85C1E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.conteneurApp{
+    width: 50rem;
+    height: 50rem;
+    /*background: #ECF0F1;*/
+    background-color: rgba(236, 240, 241, 0.5);
+    border-radius: 5%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+
+.conteneurHours{
+    height: 17%;
+}
+
+h2{
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-weight: 400;
+    font-size: 7rem;
+    text-align: center;
+}
+.conteneurHours P{
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    
+}
+
+.conteneurImg{
+    height: 30%;
+    text-align: center;
+
+}
+
+.conteneurImg img{
+    width: 20rem; 
+}
+
+
+.conteneurTemperature{
+    height: 20%;
+
+}
+
+.conteneurTemperature h3{
+    font-family: 'Caprasimo', cursive;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center; 
+
+}
+
+.conteneurTemperature p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    
+    
+}
+
+
+
+
+
+
