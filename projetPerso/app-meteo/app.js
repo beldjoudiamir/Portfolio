@@ -76,7 +76,7 @@ function dateEtHeure() {
   // affichage de date
 
   const myDate = document.querySelector(".myDate");
-  myDate.innerHTML = `le ${jour_semaine}, ${jour} ${mois} ${annee}`;
+  myDate.innerHTML = `le ${jour_semaine}, ${jour} ${mois}  ${annee}`;
   //console.log(myDate);
 
   // affichage de heure
@@ -91,3 +91,50 @@ function dateEtHeure() {
 window.onload = function () {
   setInterval("dateEtHeure()", 100);
 };
+
+
+
+async function donneesMeteo(){
+  try {
+    const response = await fetch("http://api.airvisual.com/v2/nearest_city?key=f81a46d1-eb19-4595-ae18-aa90f4795234")
+    // console.log(response);
+    const resData = await response.json();
+    console.log(resData);
+
+    const sortieData = {
+      city: resData.data.city,
+      country: resData.data.country,
+      temperature: resData.data.current.weather.tp,
+      iconId: resData.data.current.weather.ic
+    }
+
+    populateUI(sortieData)
+
+  }
+  catch (error) {
+  }
+}
+donneesMeteo()
+
+// console.log(sortieData);
+// affichage la temperature
+
+const myTemperature = document.querySelector(".myTemperature");
+const myCountry = document.querySelector(".myCountry");
+const myCity = document.querySelector(".myCity");
+const iconInfo = document.querySelector(".iconInfo");
+
+
+function populateUI(data){
+
+  myTemperature.textContent = `${data.temperature}°`;
+  myCountry.textContent = `${data.country}`;
+  myCity.textContent = `${data.city}`;
+  iconInfo.src = `./img/${data.iconId}.svg`;
+
+
+
+}
+
+
+
