@@ -7,42 +7,43 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>heure,date & température</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        
-        <div class="conteneurApp">
-            <div class="conteneurHours">
-                <p class="myDate">le XX Septembre XXXX</p>
-                <h2 class="myTime">XX H XX</h1>
-            </div>
-            <div class="conteneurImg">
-                <img class="iconInfo" src="" />
+
+        <a class="page" href="https://beldjoudiamir.github.io/Portfolio/">PAGE D'ACCUEIL</a>
+        <a class="page" href="https://github.com/beldjoudiamir/Portfolio/tree/master/projetPerso/app-meteo">VOIR LE CODE SOURCE </a>
+
+
+        <div class="bodyPage">
+            <div class="conteneurHoursDate">
+                <p class="myDate"></p>
+                <h2 class="myTime"></h1>
             </div>
             <div class="conteneurTemperature">
-                <h3 class="myTemperature">XX°</h3>
-                <p class="myCity">Nom de la ville</p>
-                <p class="myCountry">pays</p>
+                <div class="loader active">
+                    <img src="./img/loader.svg" alt="loader" class="loader">
+                </div>
+                <div class="conteneurImg">
+                    <img src="./img/avertissement.png" alt="info icon" class="infoIcon">
+                </div>
+                  <p class="error-information"></p>
+                  <p class="myCity">XXXXX</p>
+                  <p class="myCountry">xxxx</p>
+                  <p class="myTemperature">XX°</p>
             </div>
         </div>
+
+
 
         
         

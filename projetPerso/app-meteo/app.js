@@ -89,17 +89,25 @@ function dateEtHeure() {
 // Pour actualiser l'heure chaque minutes, on rappelle la fonction dateEtHeure()
 // toutes les 100 millisecondes, donc toutes les secondes
 window.onload = function () {
-  setInterval("dateEtHeure()", 100);
+  setInterval("dateEtHeure()", 1000);
 };
 
 
+const loader = document.querySelector(".loader");
+const errorInformation = document.querySelector(".infoIcon");
+// console.log(errorInformation);
 
 async function donneesMeteo(){
   try {
     const response = await fetch("http://api.airvisual.com/v2/nearest_city?key=f81a46d1-eb19-4595-ae18-aa90f4795234")
     // console.log(response);
+
+    if(!response.ok) {
+      throw new Error(`Error ${response.status}, ${response.statusText}`)
+    }
+
     const resData = await response.json();
-    console.log(resData);
+    // console.log(resData);
 
     const sortieData = {
       city: resData.data.city,
@@ -110,8 +118,13 @@ async function donneesMeteo(){
 
     populateUI(sortieData)
 
+    
   }
   catch (error) {
+
+    loader.classList.remove("active");
+    errorInformation.textContent = error.message;
+
   }
 }
 donneesMeteo()
@@ -122,7 +135,7 @@ donneesMeteo()
 const myTemperature = document.querySelector(".myTemperature");
 const myCountry = document.querySelector(".myCountry");
 const myCity = document.querySelector(".myCity");
-const iconInfo = document.querySelector(".iconInfo");
+const iconInfo = document.querySelector(".infoIcon");
 
 
 function populateUI(data){
@@ -131,10 +144,16 @@ function populateUI(data){
   myCountry.textContent = `${data.country}`;
   myCity.textContent = `${data.city}`;
   iconInfo.src = `./img/${data.iconId}.svg`;
+  iconInfo.style.width = "15rem";
 
-
+  loader.classList.remove("active");
 
 }
+
+
+
+
+
 
 
 
