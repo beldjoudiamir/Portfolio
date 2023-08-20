@@ -99,7 +99,7 @@ const errorInformation = document.querySelector(".infoIcon");
 
 async function donneesMeteo(){
   try {
-    const response = await fetch("http://api.airvisual.com/v2/nearest_city?key=f81a46d1-eb19-4595-ae18-aa90f4795234")
+    const response = await fetch("https://api.airvisual.com/v2/nearest_city?key=f81a46d1-eb19-4595-ae18-aa90f4795234")
     // console.log(response);
 
     if(!response.ok) {
