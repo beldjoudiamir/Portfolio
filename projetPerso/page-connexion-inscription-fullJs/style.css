@@ -1,0 +1,158 @@
+body {
+    background-color: #D5D8DC;
+    margin: 0; /* Add margin reset to ensure no unexpected spacing */
+    padding: 0; /* Add padding reset to ensure no unexpected spacing */
+    height: 200vh;
+    color: #17202A;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.leftContainer {
+    width: 40rem;
+    height: 40rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    position:relative;
+}
+.leftContainer img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url('./img/ai-generated-8188701_1280.jpg');
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+}
+.leftContainer .contentInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    /* align-content: center; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftContainer .contentInfo h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.leftContainer .contentInfo p{
+    margin: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+    
+}
+
+
+.rightContainer {
+    width: 40rem;
+    height: 40rem;
+    background-color: #F4F6F7;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightContainer h5{
+    font-size: 0.5rem;
+    color: #D5D8DC;
+    text-align: center;
+    width: 20rem;
+    height: auto;    
+}
+
+.rightContainer .fromSpace .input-container input{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    border-left: solid #17202A;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.rightContainer .fromSpace .boxContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    
+}
+
+.rightContainer .fromSpace .boxContainer p{
+    margin-left: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    
+}
+.rightContainer .fromSpace .btn-container{
+    text-align: center;
+}
+.rightContainer .fromSpace .btn-container button{
+    margin: 1rem;
+    border:none;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    font-size: 0.8rem;
+    background-color: #17202A;
+    color: #F0F3F4;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rightContainer .fromSpace .btn-container button:hover{
+    background-color:  #566573;
+    color: #F0F3F4;
+}
+
+.rightContainer .fromSpace .btn-container p{
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.rightContainer .fromSpace .btn-container p:hover{
+    color: #566573;
+}
+
+
+
+
+
+
+footer {
+    /*background-color: #333;*/
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
