@@ -2,7 +2,7 @@ body {
     background-color: #D5D8DC;
     margin: 0; /* Add margin reset to ensure no unexpected spacing */
     padding: 0; /* Add padding reset to ensure no unexpected spacing */
-    height: 200vh;
+    /*height: 200vh;*/
     color: #17202A;
     font-family: 'Montserrat', sans-serif;
 }
@@ -57,27 +57,30 @@ body {
     
 }
 
-
-.rightContainer {
+.rightContainer{
     width: 40rem;
     height: 40rem;
+    border: 1px solid #D5D8DC;
     background-color: #F4F6F7;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+           
 }
 
-.rightContainer h5{
+#rightContainerLogIn{
+    display: flex;  
+}
+#rightContainerLogIn h5{
     font-size: 0.5rem;
     color: #D5D8DC;
     text-align: center;
     width: 20rem;
     height: auto;    
 }
-
-.rightContainer .fromSpace .input-container input{
+#rightContainerLogIn .fromSpace .input-container input{
     width: 100%;
     height: 100%;
     display: flex;
@@ -91,7 +94,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
-.rightContainer .fromSpace .boxContainer {
+#rightContainerLogIn .fromSpace .boxContainer {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -101,15 +104,17 @@ body {
     
 }
 
-.rightContainer .fromSpace .boxContainer p{
+#rightContainerLogIn .fromSpace .boxContainer p{
     margin-left: 5rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     
 }
-.rightContainer .fromSpace .btn-container{
+
+#rightContainerLogIn .fromSpace .btn-container{
     text-align: center;
 }
-.rightContainer .fromSpace .btn-container button{
+
+#rightContainerLogIn .fromSpace .btn-container button{
     margin: 1rem;
     border:none;
     width: 10rem;
@@ -122,24 +127,94 @@ body {
     cursor: pointer;
 }
 
-.rightContainer .fromSpace .btn-container button:hover{
+#rightContainerLogIn .fromSpace .btn-container button:hover{
     background-color:  #566573;
     color: #F0F3F4;
 }
 
-.rightContainer .fromSpace .btn-container p{
+#rightContainerLogIn .fromSpace .btn-container p{
     cursor: pointer;
     font-size: 1rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 
-.rightContainer .fromSpace .btn-container p:hover{
+#rightContainerLogIn .fromSpace .btn-container p:hover{
     color: #566573;
 }
 
 
+#rightContainerSignUp{
+   display: none;
+}
 
+#rightContainerSignUp h5{
+    font-size: 0.5rem;
+    color: #D5D8DC;
+    text-align: center;
+    width: 20rem;
+    height: auto;    
+}
 
+#rightContainerSignUp .fromSpace .input-container input{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    border-left: solid #17202A;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+#rightContainerSignUp .fromSpace .boxContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    
+}
+
+#rightContainerSignUp .fromSpace .boxContainer p{
+    margin-left: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    
+}
+#rightContainerSignUp .fromSpace .btn-container{
+    text-align: center;
+}
+#rightContainerSignUp .fromSpace .btn-container button{
+    margin: 1rem;
+    border:none;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    font-size: 0.8rem;
+    background-color: #17202A;
+    color: #F0F3F4;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#rightContainerSignUp .fromSpace .btn-container button:hover{
+    background-color:  #566573;
+    color: #F0F3F4;
+}
+
+#rightContainerSignUp .fromSpace .btn-container p{
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+#rightContainerSignUp .fromSpace .btn-container p:hover{
+    color: #566573;
+}
 
 
 footer {
