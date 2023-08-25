@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture en boucle infinie d'une vidéo YouTube</title>
+<script src="https://www.youtube.com/iframe_api"></script>
+<style>
+  /* Vos styles CSS ici */
+</style>
+</head>
+<body>
+  <form id="form">
+    <label for="nom">VIDEO ID YOUTUBE</label>
+    <input type="text" name="nom" id="nom" /><br>
+    <button type="submit">Ajouter</button>
+  </form>
+  <div id="player"></div>
+
+  <script>
+    const form = document.querySelector("#form");
+    form.addEventListener("submit", myValue);
+
+    let currentVideoId = null; // Garder en mémoire l'ID de la vidéo actuellement en cours
+
+    function blockVideoLoading() {
+      // Votre fonction blockVideoLoading ici
+    }
+
+    function myValue(e) {
+      e.preventDefault();
+      const inputID = document.querySelector("#nom").value.trim();
+
+      if (inputID !== "") {
+        if (inputID !== currentVideoId) {
+          showRes(inputID);
+          currentVideoId = inputID; // Mettre à jour l'ID actuel
+        } else {
+          console.log("La même vidéo est déjà en cours.");
+        }
+      } else {
+        console.log("Le champ est vide.");
+        blockVideoLoading();
+      }
+    }
+
+    function showRes(inputID) {
+      if (inputID !== "") {
+          onYouTubeIframeAPIReady(inputID);
+      } else {
+          console.log("Pas de vidéo disponible.");
+          blockVideoLoading();
+      }
+    }
+
+    let player;
+
+    function onYouTubeIframeAPIReady(videoId) {
+      player = new YT.Player("player", {
+        height: "315",
+        width: "560",
+        videoId: videoId,
+        events: {
+          onReady: onPlayerReady,
+          onStateChange: onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data === YT.PlayerState.ENDED) {
+        player.playVideo();
+      }
+    }
+
+    blockVideoLoading();
+  </script>
+</body>
+</html>
