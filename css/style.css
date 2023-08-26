@@ -178,6 +178,7 @@ body{
     flex-direction: column;
     justify-content: center;   
     /*border: 1px solid red;*/
+    margin-bottom: 1rem;
 }
 
 .containerAbout .contentAbout{
@@ -283,15 +284,16 @@ body{
 
 .emailPhone{
     color: #138D75;
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     font-weight: 600;
     padding: 2rem 0;
     text-align: center;
+    /*border: 1px solid red;*/
     
 }
 
 .emailPhone:hover{
-    font-size: 2rem;
+    font-size: 1.35rem;
     font-weight: 600;
     padding: 2rem 0;
     color: #76D7C4;
@@ -364,6 +366,7 @@ body{
 }
 
 .containerAbout .titleAbout{
+    /*border: 1px solid red;*/
     margin: 1rem 0 0 13.5rem;   
 }
 
