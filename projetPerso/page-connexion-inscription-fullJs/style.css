@@ -17,8 +17,8 @@ body {
 }
 
 .leftContainer {
-    width: 40rem;
-    height: 40rem;
+    width: 50rem;
+    height: 50rem;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     position:relative;
@@ -58,8 +58,8 @@ body {
 }
 
 .rightContainer{
-    width: 40rem;
-    height: 40rem;
+    width: 50rem;
+    height: 50rem;
     border: 1px solid #D5D8DC;
     background-color: #F4F6F7;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
@@ -67,6 +67,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
            
 }
 
@@ -227,6 +228,61 @@ body {
     color: #566573;
 }
 
+.iconContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.iconeVerif{
+    width: 1.5rem;
+    display: none;
+}
+
+.errorMsg {
+    margin-top: 1.5rem;
+    color: #f75252;
+    font-weight: 400;
+    display: block;
+}
+
+.pswdInfo{
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.lines{
+    width: 15rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.l1, .l2, .l3 {
+    height: 5px;
+    margin: 15px 5px 20px;
+    width: 20%;
+    position: relative;
+    display: none;
+}
+.l1 {
+    background-color: #cf5914;
+}
+.l2 {
+    background-color: #fdeb50;
+}
+.l3 {
+    background-color: #14e214;
+}
+.lines span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    font-size: 0.8rem;
+}
 
 footer {
     /*background-color: #333;*/
