@@ -5,8 +5,23 @@ body {
     /*height: 200vh;*/
     color: #17202A;
     font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
 }
 
+.page{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #273746;
+    border: 1px solid #273746;
+    padding: 1rem;
+  }
+  
+.page:hover{
+    background-color: #273746;
+    color: #ECF0F1;
+  }
+  
 .content {
     display: flex;
     flex-direction: row;
@@ -155,6 +170,19 @@ body {
    display: none;
 }
 
+#rightContainerSignUp .shake {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    33% {
+        transform: translateX(-5px);
+    }
+    66%{
+        transform: translateX(5px);
+    }
+}    
+
 #rightContainerSignUp h5{
     font-size: 0.5rem;
     color: #D5D8DC;
@@ -178,6 +206,17 @@ body {
     /*retire l'oncadrement quand on click*/
     outline: 0;
 }
+
+/* Masquer les flèches */
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+
+  
 #rightContainerSignUp .fromSpace .input-container input:focus{
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
@@ -239,11 +278,11 @@ body {
     display: none;
 }
 
-.errorMsg {
+.errorMsg,.errorMsgTwo{
     margin-top: 1.5rem;
     color: #f75252;
     font-weight: 400;
-    display: block;
+    display: none;
 }
 
 .pswdInfo{
@@ -251,12 +290,21 @@ body {
     font-weight: 700;
 }
 .lines{
-    width: 15rem;
+   /* width: 15rem;
     font-weight: 700;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-around;
+    flex-direction: row;
+    margin: 0 auto;*/
+
+    width: 15rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     flex-direction: row;
     margin: 0 auto;
 }
@@ -284,8 +332,10 @@ body {
     font-size: 0.8rem;
 }
 
+/*
 footer {
-    /*background-color: #333;*/
+    background-color: #333;
+    margin-top: 2rem;
     color: black;
     text-align: center;
     padding: 10px 0;
@@ -297,4 +347,4 @@ footer {
 .footer-content {
     max-width: 960px;
     margin: 0 auto;
-}
+}*/

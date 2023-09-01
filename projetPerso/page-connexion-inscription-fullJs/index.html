@@ -16,6 +16,10 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+
+        <a class="page" href="https://beldjoudiamir.github.io/Portfolio/">PAGE D'ACCUEIL</a>
+        <a class="page" href="https://github.com/beldjoudiamir/Portfolio/tree/master/projetPerso/page-connexion-inscription-fullJs">VOIR LE CODE SOURCE </a>
+
          <div class="content">
             <div class="leftContainer">
                 <img>
@@ -66,7 +70,8 @@
         <div2 class="rightContainer" id="rightContainerSignUp">
             <h1>inscription</h1>
             <h5>Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis.</h5>
-            <span class="errorMsg">Choisissez un pseudo contenant au moins 3 caractères.</span>
+            <span class="errorMsg">Choisissez un pseudo contenant au moins 4 caractères.</span>
+            <span class="errorMsgTwo">Rentrez un email valide.</span>
             
             <form class="fromSpace" id="formSignUp">
                 <div class="input-container">
@@ -105,7 +110,9 @@
                         name="number"
                         autocomplete="off"
                         required
-                        placeholder="   Numero de Téléphone"
+                        placeholder="   Numero de Téléphone" 
+        
+                        class="no-arrows"
                         >
                         
                         <img src="./img/error.svg" alt="icone de validation" class="iconeVerif">
@@ -146,21 +153,25 @@
                         </div>
                     </div>
 
-
                     <div class="iconContainer" id="inputGroup">
-                            <input 
-                            type="password"
-                            id="confirm_password"
-                            name="confirm_password"
-                            autocomplete="off"
-                            required
-                            placeholder="   Confirmation de mot de passe"
-                            >
+                        <input 
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        autocomplete="off"
+                        required
+                        placeholder="   Confirmation de mot de passe"
+                        >
                         
                         <img src="./img/error.svg" alt="icone de validation" class="iconeVerif">
                     </div>
+
                     
                 </div> 
+
+
+
+
                 <div class="btn-container">
                     <button type="submit" >S'inscrire</button>
                     <p class="btnLogIn"> vous avez déjà un compte ? </p>
@@ -170,11 +181,15 @@
         </div>
      </div>
     </div2>
-         <footer>
+
+     <!---   <footer>
+           
             <div class="footer-content">
                 <p>&copy; 2023 Amir B. All rights reserved.</p>
             </div>
         </footer>
+       -->
+        
         <script src="./app.js" async defer></script>
     </body>
 </html>
