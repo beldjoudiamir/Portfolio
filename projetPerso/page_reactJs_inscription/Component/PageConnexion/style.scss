@@ -1,0 +1,133 @@
+@media (min-width: 819px) {
+  .helloPage {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    .imgleft {
+      width: 37rem;
+      height: 37rem;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+
+      background-image: url("../../assets/121921-OQ72VG-320.jpg");
+      background-size: 100% 100%;
+    }
+
+    .containerInfo {
+      width: 20rem;
+      height: 37rem;
+      background: white;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+
+      h1 {
+        margin-top: 1.5rem;
+        text-align: center;
+        background: none;
+        font-size: 1.5rem;
+      }
+      p {
+        background: none;
+        font-size: 0.7rem;
+        margin-left: 2.2rem;
+        margin-top: 0.5rem;
+      }
+      button {
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px solid #424949;
+        width: 15rem;
+        height: 2.5rem;
+        text-align: center;
+        img {
+          height: 1.5rem;
+          position: absolute;
+          background: none;
+          margin-left: 0.5rem;
+        }
+      }
+      button:hover {
+        background-color: #424949;
+        color: #fef5e7;
+      }
+      .login {
+        border: none;
+        font-size: 0.7rem;
+      }
+      .login:hover {
+        background: none;
+        color: black;
+      }
+    }
+  }
+}
+@media (max-width: 819px) {
+  .helloPage {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    .imgleft {
+      width: 20rem;
+      height: 20rem;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+
+      background-image: url("../../assets/121921-OQ72VG-320.jpg");
+      background-size: 100%;
+    }
+
+    .containerInfo {
+      width: 20rem;
+      height: 35rem;
+      background: white;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+
+      h1 {
+        margin-top: 1.5rem;
+        text-align: center;
+        background: none;
+        font-size: 1.5rem;
+      }
+      p {
+        background: none;
+        font-size: 0.7rem;
+        margin-left: 2.2rem;
+        margin-top: 0.5rem;
+      }
+      button {
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px solid #424949;
+        width: 15rem;
+        height: 2.5rem;
+        text-align: center;
+        img {
+          height: 1.5rem;
+          position: absolute;
+          background: none;
+          margin-left: 0.5rem;
+        }
+      }
+      button:hover {
+        background-color: #424949;
+        color: #fef5e7;
+      }
+      .login {
+        border: none;
+        font-size: 0.7rem;
+      }
+      .login:hover {
+        background: none;
+        color: black;
+      }
+    }
+  }
+}
