@@ -1,0 +1,5 @@
+export const Errors = {
+  ERR_NUM_AND_UPR: "ERR_NUM_AND_UPR",
+
+  ERR_RESOURCE_NOT_FOUND: "ERR_RESOURCE_NOT_FOUND",
+};
