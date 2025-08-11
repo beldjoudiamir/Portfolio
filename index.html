@@ -1,283 +1,254 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
+<html lang="fr" class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Curriculum vit&aelig; | Amir Beldjoudi</title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curriculum vitæ | Amir Beldjoudi</title>
+    <meta name="description" content="Portfolio d'Amir Beldjoudi – Développeur web Full‑Stack JavaScript, orienté Front‑End. Projets, compétences et contact." />
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;600&family=News+Cycle&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;600&family=News+Cycle&display=swap" rel="stylesheet" />
 
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <link rel="icon" type="image/png" href="./img/code-informatique.png" />
   </head>
   <body>
-    <div class="navigation">
-      <!-- <li>
-                        <a href="#">
-                            <span class="icon"></span>
-                            <span class="icon">Home</span>
-                        </a>
-                    </li> -->
+    <header>
+      <nav class="navigation" aria-label="Navigation principale">
+        <a class="brand" href="#accueil" aria-label="Aller à l'accueil">
+          <img class="initial" src="./img/terminal.png" alt="Logo terminal" />
+        </a>
+        <ul role="list">
+          <li>
+            <a href="#accueil">
+              <span class="icon" aria-hidden="true"><img class="fa" src="./img/home(2).png" alt="" /></span>
+              <span class="title">Accueil</span>
+            </a>
+          </li>
+          <li>
+            <a href="#a-propos">
+              <span class="icon" aria-hidden="true"><img class="fa" src="./img/id-card.png" alt="" /></span>
+              <span class="title">À propos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#competences">
+              <span class="icon" aria-hidden="true"><img class="fa" src="./img/skill.png" alt="" /></span>
+              <span class="title">Compétences</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projets">
+              <span class="icon" aria-hidden="true"><img class="fa" src="./img/project-management.png" alt="" /></span>
+              <span class="title">Projets</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span class="icon" aria-hidden="true"><img class="fa" src="./img/call.png" alt="" /></span>
+              <span class="title">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <ul>
-        <img class="initial" src="./img/terminal.png" />
-
-        <li>
-          <a href="#ACCUEIL">
-            <span class="icon"><img class="fa" src="./img/home(2).png" /></span>
-            <span class="title">ACCUEIL</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#PROPOS">
-            <span class="icon"><img class="fa" src="./img/id-card.png" /></span>
-            <span class="title">À PROPOS</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#COMPETENCES">
-            <span class="icon"><img class="fa" src="./img/skill.png" /></span>
-            <span class="title">COMPÉTENCES</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#PROJECTS">
-            <span class="icon"
-              ><img class="fa" src="./img/project-management.png"
-            /></span>
-            <span class="title">PROJECTS</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#CONTACT">
-            <span class="icon"><img class="fa" src="./img/call.png" /></span>
-            <span class="title">CONTACT</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="containerHome" id="ACCUEIL">
-      <img class="myPicture" src="./img/photo_cv2.jpg" />
+    <main id="accueil" class="containerHome">
+      <img class="myPicture" src="./img/photo_cv2.jpg" alt="Photo de profil d'Amir Beldjoudi" loading="lazy" />
       <div class="content">
-        <h3 class="titleHome">BONJOUR !</h3>
+        <h1 class="titleHome">Bonjour&nbsp;!</h1>
         <p class="contentHome">
-          Je m'appelle <br /><span class="spanHome">Amir BELDJOUDI</span><br />
-          développeur Web
-          <span class="spanFull"> Full Stack Javascript </span>mais je préfère
-          le <span class="spanFull">Front-end</span> passionné par la création
-          d'applications et d'expériences interactives sur le Web.
+          Je m'appelle <span class="spanHome">Amir BELDJOUDI</span>,<br />
+          développeur web <span class="spanFull">Full‑Stack JavaScript</span>,
+          avec une préférence pour le <span class="spanFull">Front‑End</span>,
+          passionné par la création d'applications et d'expériences interactives sur le Web.
         </p>
-        <br />
-        <div>
-          <a class="button" href="./cv/..." download="CV de Amir BELDJOUDI.pdf"
-            >Download Cv</a
+        <div class="cta-row">
+          <a class="button" href="./cv/CV-Amir-BELDJOUDI.pdf" download
+            >Télécharger le CV</a
           >
         </div>
-        <div class="social">
-          <a href="https://github.com/beldjoudiamir" target="_blank"
-            ><img class="reseau" src="./img/signe-github.png"
-          /></a>
-          <a
-            href="https://fr.linkedin.com"
-            target="_blank"
-            ><img class="reseau" src="./img/signe-linkedin.png"
-          /></a>
-          <a href="https://twitter.com/Amir_Beldjoudi" target="_blank"
-            ><img class="reseau" src="./img/signe-twitter.png"
-          /></a>
+        <div class="social" aria-label="Réseaux sociaux">
+          <a href="https://github.com/beldjoudiamir" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img class="reseau" src="./img/signe-github.png" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/amir-beldjoudi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img class="reseau" src="./img/signe-linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://twitter.com/Amir_Beldjoudi" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+            <img class="reseau" src="./img/signe-twitter.png" alt="Twitter/X" />
+          </a>
         </div>
       </div>
-    </div>
+    </main>
 
-    <div class="containerAbout" id="PROPOS">
-      <p class="contentAbout">------------ QUELQUES INFORMATIONS</p>
-      <p class="titleAbout">SUR MOI</p>
+    <section class="containerAbout" id="a-propos" aria-labelledby="titre-a-propos">
+      <p class="contentAbout" id="intro-a-propos">————— Quelques informations</p>
+      <h2 class="titleAbout" id="titre-a-propos">Sur moi</h2>
       <p class="contentInfos">
-        J'ai toujours été passionné par l'informatique. Dès mon plus jeune âge,
-        j'ai eu la chance d'avoir accès à un ordinateur, ce qui m'a permis de
-        découvrir le monde fascinant de la technologie. <br /><br />Plus tard,
-        j'ai pu acquérir de nombreuses compétences en matière de réparation et
-        de maintenance de logiciels et de matériel informatiques dans un
-        cybercafé local.<br />
-        En explorant davantage, j'ai découvert qu'il existe plusieurs langages
-        de programmation différents, et j'ai choisi de me concentrer sur le
-        développement Web. <br /><br />Bien que j'aie commencé en autodidacte en
-        apprenant HTML, CSS et PHP, j'ai vite réalisé qu'une formation
-        professionnelle avec des enseignants qualifiés était nécessaire pour
-        devenir un développeur Web compétent. <br />
-        J'ai donc suivi une formation en développement Web, où j'ai pu
-        approfondir mes connaissances et développer mes compétences sous la
-        direction de professionnels. <br /><br />Après avoir passé un examen
-        d'État avec succès, je suis devenu un développeur Web qualifié.<br /><br />
-        Aujourd'hui, je continue à développer mes compétences et connaissances
-        pour aider les clients à atteindre leurs objectifs à travers des projets
-        passionnants.
+        J'ai toujours été passionné par l'informatique. Dès mon plus jeune âge, j'ai eu la chance d'avoir accès à un ordinateur, ce qui m'a permis de découvrir le monde fascinant de la technologie.
+        <br /><br />
+        Plus tard, j'ai acquis des compétences en réparation et maintenance de logiciels et de matériel dans un cybercafé local.
+        En explorant davantage, j'ai découvert plusieurs langages de programmation et j'ai choisi de me concentrer sur le développement web.
+        <br /><br />
+        Autodidacte au départ (HTML, CSS, PHP), j'ai ensuite suivi une formation professionnelle pour consolider mes bases et obtenir un diplôme d'État. Aujourd'hui, je continue à progresser pour aider mes clients à atteindre leurs objectifs à travers des projets passionnants.
       </p>
-    </div>
+    </section>
 
-    <div class="containerAbout" id="COMPETENCES">
-      <p class="contentAbout">------------ DÉCOUVREZ MES</p>
-      <p class="titleAbout">COMPÉTENCES</p>
+    <section class="containerAbout" id="competences" aria-labelledby="titre-competences">
+      <p class="contentAbout">————— Découvrez mes</p>
+      <h2 class="titleAbout" id="titre-competences">Compétences</h2>
 
       <div class="contentIcone">
-        <p>OUTILS :</p>
-        <img class="reseau" src="./img/file_type_vscode_icon_130084.png" />
-        <img class="reseau" src="./img/Git-Icon-1788C.png" />
-        <img class="reseau" src="./img/gitcouleur.png" />
+        <p><strong>Outils&nbsp;:</strong></p>
+        <img class="reseau" src="./img/file_type_vscode_icon_130084.png" alt="VS Code" loading="lazy" />
+        <img class="reseau" src="./img/Git-Icon-1788C.png" alt="Git" loading="lazy" />
+        <img class="reseau" src="./img/gitcouleur.png" alt="Git (couleur)" loading="lazy" />
       </div>
 
       <div class="contentIcone">
-        <p>FRAMEWORK & LIBRAIRIE :</p>
-        <img class="reseau" src="./img/expressnode.png" />
-        <img class="reseau" src="./img/pngaaa.com-3801770.png" />
-        <img class="reseau" src="./img/pngaaa.com-6447779.png" />
-        <img class="reseau" src="./img/SemanticUIReact.png" />
-        <img class="reseau" src="./img/material-ui.png" />
-        <img class="reseau" src="./img/react.png" />
+        <p><strong>Frameworks &amp; bibliothèques&nbsp;:</strong></p>
+        <img class="reseau" src="./img/expressnode.png" alt="Express.js" loading="lazy" />
+        <img class="reseau" src="./img/pngaaa.com-3801770.png" alt="Node.js" loading="lazy" />
+        <img class="reseau" src="./img/pngaaa.com-6447779.png" alt="MongoDB" loading="lazy" />
+        <img class="reseau" src="./img/SemanticUIReact.png" alt="Semantic UI React" loading="lazy" />
+        <img class="reseau" src="./img/material-ui.png" alt="Material UI" loading="lazy" />
+        <img class="reseau" src="./img/react.png" alt="React" loading="lazy" />
       </div>
 
       <div class="contentIcone">
-        <p>DEVELOPPEMENT :</p>
-        <img class="reseau" src="./img/html5.png" />
-        <img class="reseau" src="./img/css3.png" />
-        <img class="reseau" src="./img/scsss.png" />
-        <img class="reseau" src="./img/5968292.png" />
-        <img class="reseau" src="./img/my sql.png" />
+        <p><strong>Développement&nbsp;:</strong></p>
+        <img class="reseau" src="./img/html5.png" alt="HTML5" loading="lazy" />
+        <img class="reseau" src="./img/css3.png" alt="CSS3" loading="lazy" />
+        <img class="reseau" src="./img/scsss.png" alt="Sass" loading="lazy" />
+        <img class="reseau" src="./img/5968292.png" alt="JavaScript" loading="lazy" />
+        <img class="reseau" src="./img/my sql.png" alt="MySQL" loading="lazy" />
       </div>
 
       <div class="contentIcone">
-        <p>Compétence Passée :</p>
-        <img class="reseau" src="./img/985px-Laravel.svg.png" />
-        <img class="reseau" src="./img/wp.png" />
+        <p><strong>Compétences passées&nbsp;:</strong></p>
+        <img class="reseau" src="./img/985px-Laravel.svg.png" alt="Laravel" loading="lazy" />
+        <img class="reseau" src="./img/wp.png" alt="WordPress" loading="lazy" />
       </div>
-    </div>
+    </section>
 
-    <div class="containerAbout" id="PROJECTS">
-      <p class="contentAbout">------------ JETEZ UN OEIL À MES</p>
-      <p class="titleAbout">PROJETS</p>
-      <p class="contentInfos" id="contentInfos">
-        <img src="./projetPerso/projectDIMC/image/imc-img.jpg" />Application web
-        pour Calculez votre Indice de Masse Corporelle
-        <a class="button" href="./projetPerso/projectDIMC/index.html">click</a>
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img
-          src="./projetPerso/questionnaire/image/quizCapture.jpg"
-        />Questionnaire qui génère automatiquement les notes<a
-          class="button"
-          href="./projetPerso/questionnaire/index.html"
-          >click</a
-        >
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img
-          src="./projetPerso/apiHtmlCss/image/Capture d’écran du 2023-07-14 16-00-24.png"
-        />Mini moteur de recherche ( Avec une API... )<a
-          class="button"
-          href="./projetPerso/apiHtmlCss/index.html"
-          >click</a
-        >
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img
-          src="./projetPerso/cookies-web/img/Capture d’écran du 2023-08-13 19-08-11.png"
-        />Projet sur le fonctionnement des cookies<a
-          class="button"
-          href="./projetPerso/cookies-web/index.html"
-          >click</a
-        >
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img
-          src="./projetPerso/app-meteo/img/Capture d’écran du 2023-08-20 14-03-16.png"
-        />Projet météo, date et heure<a
-          class="button"
-          href="./projetPerso/app-meteo/index.html"
-          >click</a
-        >
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img
-          src="./projetPerso//page-connexion-inscription-fullJs/img/Capture d’écran du 2023-09-01 13-26-27.png"
-        />Page connexion & inscription controller<a
-          class="button"
-          href="./projetPerso/page-connexion-inscription-fullJs/index.html"
-          >click</a
-        >
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img
-          src="./projetPerso/todoList/distTodolist/img/Capture d’écran du 2023-09-05 15-48-37.png"
-        />Vit JS, React JS & Tailwind CSS : Création d'une Todo List
-        <a class="button" href="./projetPerso/todoList/distTodolist/index.html"
-          >click</a
-        >
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img src="./img/Capture d’écran du 2023-10-09 00-45-31.png" />Vit JS,
-        React JS & Tailwind CSS : Page inscription controller
-        <a class="button" href="./projetPerso/page_reactJs_inscription/"
-          >voir le code source</a
-        >
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img
-          src="./projetPerso/project_WP/Capture d’écran du 2023-11-11 11-00-43.png"
-        />
-        Project wordpress
-        <a class="button" href="https://www.zeus-demenagement.fr"
-          >voir le Site Web</a
-        >
-      </p>
-      <p class="contentInfos" id="contentInfos">
-        <img
-          src="./projetPerso/project_WP/Capture d’écran du 2023-11-11 11-01-29.png"
-        />
-        Project wordpress
-        <a class="button" href="https://jn-infos.fr">voir le Site Web</a>
-      </p>
+    <section class="containerAbout" id="projets" aria-labelledby="titre-projets">
+      <p class="contentAbout">————— Jetez un œil à mes</p>
+      <h2 class="titleAbout" id="titre-projets">Projets</h2>
 
-   
-     
-    </div>
+      <div class="projects-grid" role="list">
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso/projectDIMC/image/imc-img.jpg" alt="Capture de l'application IMC" loading="lazy" />
+            <figcaption>Application web pour calculer votre Indice de Masse Corporelle</figcaption>
+          </figure>
+          <a class="button" href="./projetPerso/projectDIMC/index.html">Ouvrir</a>
+        </article>
 
-    <div class="containerAbout" id="CONTACT">
-      <p class="contentAbout">------------ HI ! HOLA HELLO</p>
-      <p class="titleAbout">CONTACT</p>
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso/questionnaire/image/quizCapture.jpg" alt="Capture du questionnaire noté" loading="lazy" />
+            <figcaption>Questionnaire qui génère automatiquement les notes</figcaption>
+          </figure>
+          <a class="button" href="./projetPerso/questionnaire/index.html">Ouvrir</a>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso/apiHtmlCss/image/Capture d’écran du 2023-07-14 16-00-24.png" alt="Mini moteur de recherche (API)" loading="lazy" />
+            <figcaption>Mini moteur de recherche (avec une API)</figcaption>
+          </figure>
+          <a class="button" href="./projetPerso/apiHtmlCss/index.html">Ouvrir</a>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso/cookies-web/img/Capture d’écran du 2023-08-13 19-08-11.png" alt="Projet sur le fonctionnement des cookies" loading="lazy" />
+            <figcaption>Projet sur le fonctionnement des cookies</figcaption>
+          </figure>
+          <a class="button" href="./projetPerso/cookies-web/index.html">Ouvrir</a>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso/app-meteo/img/Capture d’écran du 2023-08-20 14-03-16.png" alt="Application météo, date et heure" loading="lazy" />
+            <figcaption>Projet météo, date et heure</figcaption>
+          </figure>
+          <a class="button" href="./projetPerso/app-meteo/index.html">Ouvrir</a>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso//page-connexion-inscription-fullJs/img/Capture d’écran du 2023-09-01 13-26-27.png" alt="Page de connexion et d'inscription contrôlée" loading="lazy" />
+            <figcaption>Page connexion &amp; inscription (controller)</figcaption>
+          </figure>
+          <a class="button" href="./projetPerso/page-connexion-inscription-fullJs/index.html">Ouvrir</a>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso/todoList/distTodolist/img/Capture d’écran du 2023-09-05 15-48-37.png" alt="Todo List avec Vite, React et Tailwind" loading="lazy" />
+            <figcaption>Vite, React &amp; Tailwind CSS : Todo List</figcaption>
+          </figure>
+          <a class="button" href="./projetPerso/todoList/distTodolist/index.html">Ouvrir</a>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./img/Capture d’écran du 2023-10-09 00-45-31.png" alt="Page d'inscription React" loading="lazy" />
+            <figcaption>Vite, React &amp; Tailwind CSS : Page d'inscription</figcaption>
+          </figure>
+          <a class="button" href="./projetPerso/page_reactJs_inscription/">Voir le code source</a>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso/project_WP/Capture d’écran du 2023-11-11 11-00-43.png" alt="Site WordPress Zeus Déménagement" loading="lazy" />
+            <figcaption>Projet WordPress – Zeus Déménagement</figcaption>
+          </figure>
+          <a class="button" href="https://www.zeus-demenagement.fr" target="_blank" rel="noopener noreferrer">Voir le site</a>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <figure>
+            <img src="./projetPerso/project_WP/Capture d’écran du 2023-11-11 11-01-29.png" alt="Site WordPress JN Infos" loading="lazy" />
+            <figcaption>Projet WordPress – JN Infos</figcaption>
+          </figure>
+          <a class="button" href="https://jn-infos.fr" target="_blank" rel="noopener noreferrer">Voir le site</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="containerAbout" id="contact" aria-labelledby="titre-contact">
+      <p class="contentAbout">————— Hi ! Hola Hello</p>
+      <h2 class="titleAbout" id="titre-contact">Contact</h2>
       <div class="contentContact">
-        <div>
-          <img class="reseau" src="./img/offre-demploi.gif" />
-          <p class="emailPhone">amir.beldjoudi@icloud.com</p>
-          <p>Envoyez moi un email</p>
+        <div class="contact-item">
+          <img class="reseau" src="./img/offre-demploi.gif" alt="Icône e‑mail" />
+          <p class="emailPhone"><a href="mailto:amir.beldjoudi@icloud.com">amir.beldjoudi@icloud.com</a></p>
+          <p>Envoyez‑moi un e‑mail</p>
         </div>
-        <div>
-          <img class="reseau" src="./img/telephone.gif" />
-          <p class="emailPhone">06 50 23 80 21</p>
-          <p>Appelez moi</p>
+        <div class="contact-item">
+          <img class="reseau" src="./img/telephone.gif" alt="Icône téléphone" />
+          <p class="emailPhone"><a href="tel:+33650238021">06&nbsp;50&nbsp;23&nbsp;80&nbsp;21</a></p>
+          <p>Appelez‑moi</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <footer>© Amir BELDJOUDI 2023</footer>
+    <footer>
+      <small>© <span id="year"></span> Amir BELDJOUDI</small>
+    </footer>
 
-    <script src="" async defer></script>
+    <script>
+      // Met à jour automatiquement l'année du footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
