@@ -1,254 +1,144 @@
 <!DOCTYPE html>
-<html lang="fr" class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Curriculum vitæ | Amir Beldjoudi</title>
-    <meta name="description" content="Portfolio d'Amir Beldjoudi – Développeur web Full‑Stack JavaScript, orienté Front‑End. Projets, compétences et contact." />
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maintenance en cours</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#138D75" />
+  <!-- Astuce serveur : renvoyer un statut HTTP 503 + Retry-After côté serveur pendant la maintenance. -->
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;600&family=News+Cycle&display=swap" rel="stylesheet" />
+  <!-- Fonts (les mêmes que ton site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;600&family=News+Cycle:wght@400;700&display=swap" rel="stylesheet" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    :root{
+      --bg:#0e0f13;           /* fond */
+      --surface:#161821;      /* carte */
+      --text:#E8EAF0;         /* texte principal */
+      --muted:#B4B9C9;        /* texte secondaire */
+      --brand:#138D75;        /* vert marque */
+      --brand-2:#0e6e5b;      /* vert foncé */
+      --radius:1.25rem;       /* arrondis */
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;display:grid;place-items:center;min-height:100%;
+      background:radial-gradient(1200px 800px at 20% -10%, #1b1f2d 0%, #0e0f13 60%), var(--bg);
+      color:var(--text);font:400 16px/1.6 "News Cycle", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    .wrap{width:min(980px, 100% - 2rem);}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:2rem;
+      display:grid;gap:1.25rem;
+    }
+    header{display:flex;gap:1rem;align-items:center}
+    .logo{width:56px;height:56px;border-radius:14px;background:#0b0c10;display:grid;place-items:center;border:1px solid rgba(255,255,255,.06)}
+    .logo img{width:32px;height:32px}
+    h1{font-family:Antonio, system-ui, sans-serif;font-size:2.2rem;line-height:1.15;margin:0;font-weight:600}
+    p{margin:0;color:var(--muted);font-size:1.1rem}
 
-    <link rel="icon" type="image/png" href="./img/code-informatique.png" />
-  </head>
-  <body>
-    <header>
-      <nav class="navigation" aria-label="Navigation principale">
-        <a class="brand" href="#accueil" aria-label="Aller à l'accueil">
-          <img class="initial" src="./img/terminal.png" alt="Logo terminal" />
-        </a>
-        <ul role="list">
-          <li>
-            <a href="#accueil">
-              <span class="icon" aria-hidden="true"><img class="fa" src="./img/home(2).png" alt="" /></span>
-              <span class="title">Accueil</span>
-            </a>
-          </li>
-          <li>
-            <a href="#a-propos">
-              <span class="icon" aria-hidden="true"><img class="fa" src="./img/id-card.png" alt="" /></span>
-              <span class="title">À propos</span>
-            </a>
-          </li>
-          <li>
-            <a href="#competences">
-              <span class="icon" aria-hidden="true"><img class="fa" src="./img/skill.png" alt="" /></span>
-              <span class="title">Compétences</span>
-            </a>
-          </li>
-          <li>
-            <a href="#projets">
-              <span class="icon" aria-hidden="true"><img class="fa" src="./img/project-management.png" alt="" /></span>
-              <span class="title">Projets</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <span class="icon" aria-hidden="true"><img class="fa" src="./img/call.png" alt="" /></span>
-              <span class="title">Contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    .bar{height:12px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden;position:relative}
+    .bar > span{display:block;height:100%;width:0;background:linear-gradient(90deg, var(--brand), var(--brand-2));border-radius:inherit}
 
-    <main id="accueil" class="containerHome">
-      <img class="myPicture" src="./img/photo_cv2.jpg" alt="Photo de profil d'Amir Beldjoudi" loading="lazy" />
-      <div class="content">
-        <h1 class="titleHome">Bonjour&nbsp;!</h1>
-        <p class="contentHome">
-          Je m'appelle <span class="spanHome">Amir BELDJOUDI</span>,<br />
-          développeur web <span class="spanFull">Full‑Stack JavaScript</span>,
-          avec une préférence pour le <span class="spanFull">Front‑End</span>,
-          passionné par la création d'applications et d'expériences interactives sur le Web.
-        </p>
-        <div class="cta-row">
-          <a class="button" href="./cv/CV-Amir-BELDJOUDI.pdf" download
-            >Télécharger le CV</a
-          >
+    .grid{display:grid;gap:1rem}
+    @media (min-width:700px){.grid{grid-template-columns:1fr auto}}
+
+    .pill{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .7rem;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:.95rem;color:var(--muted)}
+    .cta{display:flex;gap:.75rem;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.1rem;border-radius:.8rem;font-weight:700;border:1px solid transparent;cursor:pointer;text-decoration:none}
+    .btn-primary{background:var(--brand);color:white}
+    .btn-primary:hover{background:var(--brand-2)}
+    .btn-ghost{background:transparent;border-color:rgba(255,255,255,.16);color:var(--text)}
+    .btn-ghost:hover{background:rgba(255,255,255,.06)}
+
+    footer{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+    .contact{display:flex;gap:.75rem;flex-wrap:wrap}
+    .contact a{color:inherit}
+    .contact a:hover{color:#d9dde8}
+
+    .timer{font-family:Antonio, system-ui, sans-serif;font-size:1.4rem;color:#fff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="status" aria-live="polite">
+      <header>
+        <div class="logo" aria-hidden="true">
+          <!-- Remplace par ton icône -->
+          <img src="./img/terminal.png" alt=""/>
         </div>
-        <div class="social" aria-label="Réseaux sociaux">
-          <a href="https://github.com/beldjoudiamir" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <img class="reseau" src="./img/signe-github.png" alt="GitHub" />
-          </a>
-          <a href="https://www.linkedin.com/in/amir-beldjoudi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <img class="reseau" src="./img/signe-linkedin.png" alt="LinkedIn" />
-          </a>
-          <a href="https://twitter.com/Amir_Beldjoudi" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
-            <img class="reseau" src="./img/signe-twitter.png" alt="Twitter/X" />
-          </a>
+        <div>
+          <h1>Maintenance en cours</h1>
+          <p>Nous améliorons le site pour vous offrir une meilleure expérience. Merci de votre patience.</p>
         </div>
-      </div>
-    </main>
+      </header>
 
-    <section class="containerAbout" id="a-propos" aria-labelledby="titre-a-propos">
-      <p class="contentAbout" id="intro-a-propos">————— Quelques informations</p>
-      <h2 class="titleAbout" id="titre-a-propos">Sur moi</h2>
-      <p class="contentInfos">
-        J'ai toujours été passionné par l'informatique. Dès mon plus jeune âge, j'ai eu la chance d'avoir accès à un ordinateur, ce qui m'a permis de découvrir le monde fascinant de la technologie.
-        <br /><br />
-        Plus tard, j'ai acquis des compétences en réparation et maintenance de logiciels et de matériel dans un cybercafé local.
-        En explorant davantage, j'ai découvert plusieurs langages de programmation et j'ai choisi de me concentrer sur le développement web.
-        <br /><br />
-        Autodidacte au départ (HTML, CSS, PHP), j'ai ensuite suivi une formation professionnelle pour consolider mes bases et obtenir un diplôme d'État. Aujourd'hui, je continue à progresser pour aider mes clients à atteindre leurs objectifs à travers des projets passionnants.
-      </p>
-    </section>
-
-    <section class="containerAbout" id="competences" aria-labelledby="titre-competences">
-      <p class="contentAbout">————— Découvrez mes</p>
-      <h2 class="titleAbout" id="titre-competences">Compétences</h2>
-
-      <div class="contentIcone">
-        <p><strong>Outils&nbsp;:</strong></p>
-        <img class="reseau" src="./img/file_type_vscode_icon_130084.png" alt="VS Code" loading="lazy" />
-        <img class="reseau" src="./img/Git-Icon-1788C.png" alt="Git" loading="lazy" />
-        <img class="reseau" src="./img/gitcouleur.png" alt="Git (couleur)" loading="lazy" />
-      </div>
-
-      <div class="contentIcone">
-        <p><strong>Frameworks &amp; bibliothèques&nbsp;:</strong></p>
-        <img class="reseau" src="./img/expressnode.png" alt="Express.js" loading="lazy" />
-        <img class="reseau" src="./img/pngaaa.com-3801770.png" alt="Node.js" loading="lazy" />
-        <img class="reseau" src="./img/pngaaa.com-6447779.png" alt="MongoDB" loading="lazy" />
-        <img class="reseau" src="./img/SemanticUIReact.png" alt="Semantic UI React" loading="lazy" />
-        <img class="reseau" src="./img/material-ui.png" alt="Material UI" loading="lazy" />
-        <img class="reseau" src="./img/react.png" alt="React" loading="lazy" />
-      </div>
-
-      <div class="contentIcone">
-        <p><strong>Développement&nbsp;:</strong></p>
-        <img class="reseau" src="./img/html5.png" alt="HTML5" loading="lazy" />
-        <img class="reseau" src="./img/css3.png" alt="CSS3" loading="lazy" />
-        <img class="reseau" src="./img/scsss.png" alt="Sass" loading="lazy" />
-        <img class="reseau" src="./img/5968292.png" alt="JavaScript" loading="lazy" />
-        <img class="reseau" src="./img/my sql.png" alt="MySQL" loading="lazy" />
-      </div>
-
-      <div class="contentIcone">
-        <p><strong>Compétences passées&nbsp;:</strong></p>
-        <img class="reseau" src="./img/985px-Laravel.svg.png" alt="Laravel" loading="lazy" />
-        <img class="reseau" src="./img/wp.png" alt="WordPress" loading="lazy" />
-      </div>
-    </section>
-
-    <section class="containerAbout" id="projets" aria-labelledby="titre-projets">
-      <p class="contentAbout">————— Jetez un œil à mes</p>
-      <h2 class="titleAbout" id="titre-projets">Projets</h2>
-
-      <div class="projects-grid" role="list">
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso/projectDIMC/image/imc-img.jpg" alt="Capture de l'application IMC" loading="lazy" />
-            <figcaption>Application web pour calculer votre Indice de Masse Corporelle</figcaption>
-          </figure>
-          <a class="button" href="./projetPerso/projectDIMC/index.html">Ouvrir</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso/questionnaire/image/quizCapture.jpg" alt="Capture du questionnaire noté" loading="lazy" />
-            <figcaption>Questionnaire qui génère automatiquement les notes</figcaption>
-          </figure>
-          <a class="button" href="./projetPerso/questionnaire/index.html">Ouvrir</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso/apiHtmlCss/image/Capture d’écran du 2023-07-14 16-00-24.png" alt="Mini moteur de recherche (API)" loading="lazy" />
-            <figcaption>Mini moteur de recherche (avec une API)</figcaption>
-          </figure>
-          <a class="button" href="./projetPerso/apiHtmlCss/index.html">Ouvrir</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso/cookies-web/img/Capture d’écran du 2023-08-13 19-08-11.png" alt="Projet sur le fonctionnement des cookies" loading="lazy" />
-            <figcaption>Projet sur le fonctionnement des cookies</figcaption>
-          </figure>
-          <a class="button" href="./projetPerso/cookies-web/index.html">Ouvrir</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso/app-meteo/img/Capture d’écran du 2023-08-20 14-03-16.png" alt="Application météo, date et heure" loading="lazy" />
-            <figcaption>Projet météo, date et heure</figcaption>
-          </figure>
-          <a class="button" href="./projetPerso/app-meteo/index.html">Ouvrir</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso//page-connexion-inscription-fullJs/img/Capture d’écran du 2023-09-01 13-26-27.png" alt="Page de connexion et d'inscription contrôlée" loading="lazy" />
-            <figcaption>Page connexion &amp; inscription (controller)</figcaption>
-          </figure>
-          <a class="button" href="./projetPerso/page-connexion-inscription-fullJs/index.html">Ouvrir</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso/todoList/distTodolist/img/Capture d’écran du 2023-09-05 15-48-37.png" alt="Todo List avec Vite, React et Tailwind" loading="lazy" />
-            <figcaption>Vite, React &amp; Tailwind CSS : Todo List</figcaption>
-          </figure>
-          <a class="button" href="./projetPerso/todoList/distTodolist/index.html">Ouvrir</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./img/Capture d’écran du 2023-10-09 00-45-31.png" alt="Page d'inscription React" loading="lazy" />
-            <figcaption>Vite, React &amp; Tailwind CSS : Page d'inscription</figcaption>
-          </figure>
-          <a class="button" href="./projetPerso/page_reactJs_inscription/">Voir le code source</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso/project_WP/Capture d’écran du 2023-11-11 11-00-43.png" alt="Site WordPress Zeus Déménagement" loading="lazy" />
-            <figcaption>Projet WordPress – Zeus Déménagement</figcaption>
-          </figure>
-          <a class="button" href="https://www.zeus-demenagement.fr" target="_blank" rel="noopener noreferrer">Voir le site</a>
-        </article>
-
-        <article class="project-card" role="listitem">
-          <figure>
-            <img src="./projetPerso/project_WP/Capture d’écran du 2023-11-11 11-01-29.png" alt="Site WordPress JN Infos" loading="lazy" />
-            <figcaption>Projet WordPress – JN Infos</figcaption>
-          </figure>
-          <a class="button" href="https://jn-infos.fr" target="_blank" rel="noopener noreferrer">Voir le site</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="containerAbout" id="contact" aria-labelledby="titre-contact">
-      <p class="contentAbout">————— Hi ! Hola Hello</p>
-      <h2 class="titleAbout" id="titre-contact">Contact</h2>
-      <div class="contentContact">
-        <div class="contact-item">
-          <img class="reseau" src="./img/offre-demploi.gif" alt="Icône e‑mail" />
-          <p class="emailPhone"><a href="mailto:amir.beldjoudi@icloud.com">amir.beldjoudi@icloud.com</a></p>
-          <p>Envoyez‑moi un e‑mail</p>
+      <div class="grid">
+        <div>
+          <div class="pill">Statut&nbsp;: indisponible temporairement</div>
+          <p id="eta">Estimation de remise en ligne&nbsp;: <strong>dans quelques minutes</strong>.</p>
+          <div class="bar" aria-label="Progression estimée">
+            <span id="progress" style="width:35%"></span>
+          </div>
         </div>
-        <div class="contact-item">
-          <img class="reseau" src="./img/telephone.gif" alt="Icône téléphone" />
-          <p class="emailPhone"><a href="tel:+33650238021">06&nbsp;50&nbsp;23&nbsp;80&nbsp;21</a></p>
-          <p>Appelez‑moi</p>
+        <div class="timer" id="countdown" aria-label="Compte à rebours" title="Compte à rebours vers 30 minutes">
+          00:30:00
         </div>
       </div>
-    </section>
 
-    <footer>
-      <small>© <span id="year"></span> Amir BELDJOUDI</small>
-    </footer>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:amir.beldjoudi@icloud.com">Nous contacter</a>
+        <a class="btn btn-ghost" href="#" onclick="location.reload();return false;">Réessayer</a>
+        <!-- Lien éventuel vers une page statut -->
+        <!-- <a class="btn btn-ghost" href="/status">Voir l'état du service</a> -->
+      </div>
 
-    <script>
-      // Met à jour automatiquement l'année du footer
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+      <footer>
+        <span>© <span id="year"></span> Amir Beldjoudi</span>
+        <div class="contact">
+          <a href="mailto:amir.beldjoudi@icloud.com">amir.beldjoudi@icloud.com</a>
+          <span>·</span>
+          <a href="tel:+33650238021">06&nbsp;50&nbsp;23&nbsp;80&nbsp;21</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Met à jour l'année
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Petite animation de progression (boucle douce entre 20% et 85%)
+    (function progressLoop(){
+      const el = document.getElementById('progress');
+      let w = 30 + Math.random()*55; // 30% - 85%
+      el.style.transition = 'width 2.5s ease';
+      el.style.width = w + '%';
+      setTimeout(progressLoop, 3000);
+    })();
+
+    // Compte à rebours 30 min (modifiable)
+    const countdownEl = document.getElementById('countdown');
+    let total = 30*60; // secondes
+    const tick = () => {
+      if (total < 0) return; // stop
+      const h = String(Math.floor(total/3600)).padStart(2,'0');
+      const m = String(Math.floor((total%3600)/60)).padStart(2,'0');
+      const s = String(total%60).padStart(2,'0');
+      countdownEl.textContent = `${h}:${m}:${s}`;
+      total--;
+    };
+    setInterval(tick, 1000);
+    tick();
+  </script>
+</body>
 </html>
