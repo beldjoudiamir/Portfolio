@@ -1,144 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maintenance en cours</title>
-  <meta name="robots" content="noindex, nofollow" />
-  <meta name="theme-color" content="#138D75" />
-  <!-- Astuce serveur : renvoyer un statut HTTP 503 + Retry-After côté serveur pendant la maintenance. -->
-
-  <!-- Fonts (les mêmes que ton site) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;600&family=News+Cycle:wght@400;700&display=swap" rel="stylesheet" />
-
-  <style>
-    :root{
-      --bg:#0e0f13;           /* fond */
-      --surface:#161821;      /* carte */
-      --text:#E8EAF0;         /* texte principal */
-      --muted:#B4B9C9;        /* texte secondaire */
-      --brand:#138D75;        /* vert marque */
-      --brand-2:#0e6e5b;      /* vert foncé */
-      --radius:1.25rem;       /* arrondis */
-      --shadow:0 20px 60px rgba(0,0,0,.35);
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;display:grid;place-items:center;min-height:100%;
-      background:radial-gradient(1200px 800px at 20% -10%, #1b1f2d 0%, #0e0f13 60%), var(--bg);
-      color:var(--text);font:400 16px/1.6 "News Cycle", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
-    .wrap{width:min(980px, 100% - 2rem);}
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border:1px solid rgba(255,255,255,.06);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:2rem;
-      display:grid;gap:1.25rem;
-    }
-    header{display:flex;gap:1rem;align-items:center}
-    .logo{width:56px;height:56px;border-radius:14px;background:#0b0c10;display:grid;place-items:center;border:1px solid rgba(255,255,255,.06)}
-    .logo img{width:32px;height:32px}
-    h1{font-family:Antonio, system-ui, sans-serif;font-size:2.2rem;line-height:1.15;margin:0;font-weight:600}
-    p{margin:0;color:var(--muted);font-size:1.1rem}
-
-    .bar{height:12px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden;position:relative}
-    .bar > span{display:block;height:100%;width:0;background:linear-gradient(90deg, var(--brand), var(--brand-2));border-radius:inherit}
-
-    .grid{display:grid;gap:1rem}
-    @media (min-width:700px){.grid{grid-template-columns:1fr auto}}
-
-    .pill{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .7rem;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:.95rem;color:var(--muted)}
-    .cta{display:flex;gap:.75rem;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.1rem;border-radius:.8rem;font-weight:700;border:1px solid transparent;cursor:pointer;text-decoration:none}
-    .btn-primary{background:var(--brand);color:white}
-    .btn-primary:hover{background:var(--brand-2)}
-    .btn-ghost{background:transparent;border-color:rgba(255,255,255,.16);color:var(--text)}
-    .btn-ghost:hover{background:rgba(255,255,255,.06)}
-
-    footer{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
-    .contact{display:flex;gap:.75rem;flex-wrap:wrap}
-    .contact a{color:inherit}
-    .contact a:hover{color:#d9dde8}
-
-    .timer{font-family:Antonio, system-ui, sans-serif;font-size:1.4rem;color:#fff}
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <div class="card" role="status" aria-live="polite">
-      <header>
-        <div class="logo" aria-hidden="true">
-          <!-- Remplace par ton icône -->
-          <img src="./img/terminal.png" alt=""/>
-        </div>
-        <div>
-          <h1>Maintenance en cours</h1>
-          <p>Nous améliorons le site pour vous offrir une meilleure expérience. Merci de votre patience.</p>
-        </div>
-      </header>
-
-      <div class="grid">
-        <div>
-          <div class="pill">Statut&nbsp;: indisponible temporairement</div>
-          <p id="eta">Estimation de remise en ligne&nbsp;: <strong>dans quelques minutes</strong>.</p>
-          <div class="bar" aria-label="Progression estimée">
-            <span id="progress" style="width:35%"></span>
-          </div>
-        </div>
-        <div class="timer" id="countdown" aria-label="Compte à rebours" title="Compte à rebours vers 30 minutes">
-          00:30:00
-        </div>
-      </div>
-
-      <div class="cta">
-        <a class="btn btn-primary" href="mailto:amir.beldjoudi@icloud.com">Nous contacter</a>
-        <a class="btn btn-ghost" href="#" onclick="location.reload();return false;">Réessayer</a>
-        <!-- Lien éventuel vers une page statut -->
-        <!-- <a class="btn btn-ghost" href="/status">Voir l'état du service</a> -->
-      </div>
-
-      <footer>
-        <span>© <span id="year"></span> Amir Beldjoudi</span>
-        <div class="contact">
-          <a href="mailto:amir.beldjoudi@icloud.com">amir.beldjoudi@icloud.com</a>
-          <span>·</span>
-          <a href="tel:+33650238021">06&nbsp;50&nbsp;23&nbsp;80&nbsp;21</a>
-        </div>
-      </footer>
-    </div>
-  </div>
-
-  <script>
-    // Met à jour l'année
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Petite animation de progression (boucle douce entre 20% et 85%)
-    (function progressLoop(){
-      const el = document.getElementById('progress');
-      let w = 30 + Math.random()*55; // 30% - 85%
-      el.style.transition = 'width 2.5s ease';
-      el.style.width = w + '%';
-      setTimeout(progressLoop, 3000);
-    })();
-
-    // Compte à rebours 30 min (modifiable)
-    const countdownEl = document.getElementById('countdown');
-    let total = 30*60; // secondes
-    const tick = () => {
-      if (total < 0) return; // stop
-      const h = String(Math.floor(total/3600)).padStart(2,'0');
-      const m = String(Math.floor((total%3600)/60)).padStart(2,'0');
-      const s = String(total%60).padStart(2,'0');
-      countdownEl.textContent = `${h}:${m}:${s}`;
-      total--;
-    };
-    setInterval(tick, 1000);
-    tick();
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BELDJOUDI Amir</title>
+    <meta name="description" content="Portfolio de BELDJOUDI Amir, développeur web et applications." />
+    <meta property="og:title" content="BELDJOUDI Amir" />
+    <meta property="og:description" content="Portfolio de BELDJOUDI Amir, développeur web et applications." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/5ac3fe7c6abd2f62067f266d89671492?family=HelveticaNowDisplay-Medium" type="text/css" />
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/1aa3377e489837a26d019bba501e779d?family=HelveticaNowDisplayW01-Rg" type="text/css" />
+    <script type="module" crossorigin src="/assets/index-BB1ltqs1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DbNaM3Ha.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
